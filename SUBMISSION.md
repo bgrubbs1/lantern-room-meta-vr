@@ -17,9 +17,9 @@ details are stored in this repository.
 | **Track** | **Gaming** |
 | **Division** | **New Experience** |
 | **Target launch date** | **2027-02-19** (Meta Horizon Store / Quest app submission) |
-| **Hosted project link** | **[FILL IN]** `https://<github-username>.github.io/the-lantern-room/` (see `DEPLOY.md`) |
+| **Hosted project link** | **[FILL IN]** `https://bgrubbs1.github.io/lantern-room-meta-vr/` (see `DEPLOY.md`) |
 | **Demo video (public YouTube/Vimeo)** | **[FILL IN]** `https://www.youtube.com/watch?v=…` — must be **Public**, under 3:00 |
-| **Project repository** (optional) | **[FILL IN]** GitHub repository URL |
+| **Project repository** (optional) | `https://github.com/bgrubbs1/lantern-room-meta-vr` |
 | **Screenshots** | `screenshots/lantern-room-desktop.png`, `screenshots/lantern-room-high-contrast.png`, `screenshots/lantern-room-finale.png`, `screenshots/xr-emulator.png` |
 | **Built with tags** | `meta-quest`, `immersive-web-sdk`, `iwsdk`, `webxr`, `three.js`, `typescript`, `vite`, `vitest`, `webaudio`, `procedural` |
 
