@@ -184,3 +184,23 @@ Desktop Chrome can inspect the Quest Browser tab over USB/ADB:
   entry period ends (no changes are allowed after 2026-11-18 12:00 noon PT).
 - If the URL changes for any reason, that invalidates the submission — deploy
   once, early, and keep it stable.
+
+---
+
+## Note: how this repository is deployed right now (2026-10-27)
+
+The GitHub credential available to the build environment does not have the
+`workflow` scope, so the Actions workflow cannot be pushed verbatim. This repo
+therefore uses **GitHub Pages from the committed `/docs` build**:
+
+- Pages source: branch `main`, folder `/docs` (a fresh `npm run build` output is committed there).
+- URL: https://bgrubbs1.github.io/lantern-room-meta-vr/
+- To switch to the Actions workflow later: open the repo on GitHub → Add file →
+  create `.github/workflows/deploy-pages.yml` with the workflow shown above (or in
+  the build notes), then Settings → Pages → Source: GitHub Actions.
+
+Rebuild and refresh the deployed site with:
+
+```bash
+npm run build && rm -rf docs && cp -r dist docs && git add docs && git commit -m "Deploy: refresh static build" && git push
+```
